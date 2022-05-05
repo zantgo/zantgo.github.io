@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <title>myPage</title>
@@ -10,31 +9,16 @@
     <body>
         <h1>Welcome to my page! </h1>
         <p><strong>Please enter your name to greet you properly:</strong></p>
-
         <form>
             <input type="text" id="text" placeholder="Here">
             <input id="env" type="button" value="Send" onclick="greeting()">
             <button type="reset">Try again!</button>
         </form>
-
         <script>
             function greeting() {
                 var text = document.getElementById("text");
                 alert("Welcome "+text.value+" to Santiago's Page!");
             }
-
         </script>
-
-
-
-
-
-
-
-
-
-
-
-
     </body>
 </html>
