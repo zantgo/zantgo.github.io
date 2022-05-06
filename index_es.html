@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Santiago's Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+    </head> 
+    <body lang="es">
+        <h1>Bienvenid@ a mi página! </h1>
+        <p><strong>Porfavor escribe tu nombre para saludarte adecuadamente: </strong></p>
+        <form>
+            <input type="text" id="text" placeholder="Escribe aqui" required><br><br>
+            <button id="text" onclick="greeting()">Enviar</button>
+            <button type="reset">Intentar denuevo!</button>
+        </form>
+        <script>
+            function greeting() {
+                var text = document.getElementById("text");
+                alert("Bienvenido a "+text.value+" la página de Santiago");
+                alert("Soy un Ingeniero de Software si quieres contactarme porfavor escribe a santiago_rj_@outlook.es";
+            }
+        </script>
+        <form>
+            <button id="index_es" onclick="index_es.html">Español</button>
+        </form> 
+    </body>
+</html>
