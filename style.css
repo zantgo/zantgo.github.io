@@ -16,7 +16,15 @@ button {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-decoration:rgb(100, 10, 10);
     color:rgb(100, 34, 95);
+}
+
+
+#boton_idioma {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration:rgb(100, 10, 10);
+    color:rgb(100, 34, 95);
     width: 20em;  height: 2em;
+    
 }
 
 #index_es {
