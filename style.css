@@ -25,24 +25,11 @@ button {
      font-size: 8pt;
      font-family: tahoma;
      margin-top: 1px;
-     width: 20em;  
+     width: 50em;  
      height: 2em;
      margin-right: 2px;
      position:absolute;
-     top:0;
-     right:0;
+     top:2;
+     right:2;
 }
 
-#index_es {
-     line-height: 12px;
-     width: 18px;
-     font-size: 8pt;
-     font-family: tahoma;
-     margin-top: 1px;
-     width: 20em;  
-     height: 2em;
-     margin-right: 2px;
-     position:absolute;
-     top:0;
-     right:0;
-}
