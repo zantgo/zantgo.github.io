@@ -1,77 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZANTGO</title>
-    <link rel="icon" href="logo.png" type="image/png">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            text-align: center;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem;
-        }
-
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        .social-links {
-            margin-top: 1rem;
-        }
-
-        .social-links a {
-            margin: 0 1rem;
-            color: #333;
-            text-decoration: none;
-        }
-    </style>
+    <title>Santiago Rojas Developer Portfolio</title>
+    <link rel="icon" href="brand.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <header>
-        <h1>Welcome to my website!</h1>
-        <p>Here you can find information about my projects and how to contact me.</p>
-    </header>
-
-    <div class="container">
-        <h2>Connect with me:</h2>
-        <div class="social-links">
-            <a href="mailto:zantgo@gmail.com">Email</a>
-            <a href="https://github.com/zantgo">GitHub</a>
-            <a href="https://www.linkedin.com/in/santiago-tom%C3%A1s-rojas-jim%C3%A9nez-615329294/">LinkedIn</a>
-            <a href="https://x.com/_zantgo_">X</a>
+    <div class="splash-screen">
+        <img src="brand.png" alt="My Logo" class="logo">
+        <div class="splash-animation" id="name-title">
+            <h1>Santiago Rojas</h1>
+            <h2>Web & Mobile Developer</h2>
+        </div>
+    </div>
+    <div class="top-bar">
+        <div class="left-section">
+            <a href="#" class="nav-link" id="logo-link"><img src="brand.png" alt="Home" class="nav-logo"></a>
+            <a href="#" class="action-link">Download CV</a>
+            <a href="mailto:your@email.com" class="action-link">Send Email</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="nav-links" id="nav-links">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#achievements" class="nav-link">Achievements</a>
+            <a href="#contact" class="nav-link">Contact</a>
         </div>
     </div>
 
     <div class="container">
-        <h2>Try one of my projects:</h2>
-        <div class="social-links">
-            <a href="https://play.google.com/store/apps/details?id=com.date_activity.activity_on_track">ActivityOnTrack</a>
-        </div>
+        <section id="about" class="box">
+            <h1>About Me</h1>
+            <p>Hello! I'm Santiago Rojas, a web and mobile developer. I love creating beautiful and functional applications.</p>
+        </section>
+
+        <section id="skills" class="box">
+            <h1>Skills</h1>
+            <div class="skills">
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">Kotlin</span>
+                <span class="skill">React</span>
+                <span class="skill">Node.js</span>
+            </div>
+        </section>
+
+        <section id="projects" class="box">
+            <h1>Projects</h1>
+            <div class="projects">
+                <div class="project">
+                    <img src="project1.png" alt="Project 1">
+                    <h2>Project 1</h2>
+                    <p>Brief description of Project 1.</p>
+                    <a href="https://github.com/santiagorojas/project1" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project">
+                    <img src="project2.png" alt="Project 2">
+                    <h2>Project 2</h2>
+                    <p>Brief description of Project 2.</p>
+                    <a href="https://github.com/santiagorojas/project2" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project">
+                    <img src="project3.png" alt="Project 3">
+                    <h2>Project 3</h2>
+                    <p>Brief description of Project 3.</p>
+                    <a href="https://github.com/santiagorojas/project3" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="box">
+            <h1>Achievements</h1>
+            <div class="achievements-container">
+                <div class="achievement">
+                    <div class="circle">1</div>
+                    <p>Achievement one description.</p>
+                </div>
+                <div class="achievement">
+                    <div class="circle">2</div>
+                    <p>Achievement two description.</p>
+                </div>
+                <div class="achievement">
+                    <div class="circle">3</div>
+                    <p>Achievement three description.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="box">
+            <h1>Contact Information</h1>
+            <div class="links">
+                
+                <a href="https://github.com/zantgo">GitHub</a>
+                <a href="https://www.linkedin.com/in/santiago-tom%C3%A1s-rojas-jim%C3%A9nez/">LinkedIn</a>
+                <a href="https://x.com/_zantgo_">X</a>
+            </div>
+        </section>
     </div>
 
-    <div class="container">
-        <h2>Resume:</h2>
-        <div class="social-links">
-            <a href="cv.pdf" class="cv-link">Curriculum Vitae</a>
-
-        </div>
+    <div class="bottom-bar">
+        <div></div>
+        <div class="name">Santiago Rojas</div>
     </div>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.querySelector('.container');
+            const boxes = document.querySelectorAll('.box');
+            const projects = document.querySelectorAll('.project');
+            const achievements = document.querySelectorAll('.achievement');
+            const splashScreen = document.querySelector('.splash-screen');
+            const logoLink = document.getElementById('logo-link');
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('nav-links');
+            const nameTitle = document.getElementById('name-title');
 
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('open');
+            });
+
+            logoLink.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            setTimeout(() => {
+                nameTitle.classList.add('visible');
+            }, 500);
+
+            setTimeout(() => {
+                splashScreen.classList.add('hidden');
+                container.classList.add('visible');
+                boxes.forEach((box, index) => {
+                    setTimeout(() => {
+                        box.classList.add('visible');
+                    }, index * 200);
+                });
+            }, 2500);
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            projects.forEach(project => observer.observe(project));
+            achievements.forEach(achievement => observer.observe(achievement));
+        });
+    </script>
 </body>
-
 </html>
